@@ -19,6 +19,7 @@ spec:
       containers:
         - image: eslamgalal123/project
           name: project-container
-          imagePullpolicy: IfNotPresent
-          ports:
-            -containerPort: 80
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "1"
